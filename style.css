@@ -425,7 +425,6 @@ body{
         width: 100%;
         height: max-content;
         flex-direction: column;
-        margin-left:10%;
         gap:25px;
     }
     .project-titel {
@@ -434,9 +433,77 @@ body{
     .projects-1 {
         width: 80%;
         height: 92%;
+        margin-left: 10%;
     }
     .project-deatail {
         padding:10px;
     }
 }
 /* end project section */
+
+/* start sarvices contier */
+.sarvices-conatainer-titel{
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    font-family: var(--heading_font);
+    color:var(--text-color);
+    margin-top:50px;
+}
+.sarvices-container{
+    width: 100%;
+    height: 300px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    gap:30px;
+}
+.sarvice{
+    width: 25%;
+    height: max-content;
+    background-color: var(--card_background);
+    border-radius:10px;
+}
+.sarvice-logo{
+    width: 100%;
+    height: max-content;
+    font-size: 3rem;
+    color:var(--primary-color);
+    text-align: center;
+}
+.sarvice-name{
+    width: 100%;
+    height: max-content;
+    font-family: var(--heading_font);
+    color:var(--text-color);
+    text-align: center;
+}
+.sarvice-detail{
+    width: 100%;
+    height: auto;
+    color:var(--text-color);
+    font-family: var(--primaryFont);
+    text-align: center;
+    padding:20px;
+}
+/* resonsib sarvices */
+@media screen and (max-width:768px) {
+    .sarvices-container{
+        width: 100%;
+        height: max-content;
+        flex-direction:column;
+    }
+    .sarvice{
+        width: 80%;
+        height: max-content;
+    }
+    .sarvices-conatainer-titel {
+        margin-top:120px;
+        margin-bottom:30px;
+    }
+}
+@media screen and (max-width:450px) {
+    .sarvice-detail {
+        font-size: .9rem;
+     }
+}
