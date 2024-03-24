@@ -11,6 +11,7 @@
     --heading_font:"Average Sans", sans-serif;
     --nav-color:rgb(0, 89, 255);
     --card_background:rgba(255, 255, 255, 0.075);
+    --progress-bar-color:rgb(0, 89, 255);
 }
 ::-webkit-scrollbar{
     width: 4px;
@@ -507,3 +508,88 @@ body{
         font-size: .9rem;
      }
 }
+/* end sarvices conainer */
+/* start skill container */
+.skill-container-titel{
+    width: 100%;
+    height: max-content;
+    font-family:var(--heading_font);
+    color:var(--text-color);
+    margin-top:50px;
+    text-align: center;
+}
+.skill-container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+.skill-left{
+    width: 50%;
+    height: 300px;
+    border:1px solid red;
+    display: flex;
+    justify-content: center;
+}
+.skill-right{
+    width: 50%;
+    height: 300px;
+    border:1px solid red;
+}
+.tacnical-skills{
+    width: 85%;
+    height: 100%;
+    /* border:1px solid red;  */
+}
+.skill-titel{
+    width: 100%;
+    height: max-content;
+    font-family: var(--heading_font);
+    text-align: center;
+    color:var(--text-color);
+}
+/* start progress */
+.progress-bar-continer{
+    width: 100%;
+    height: 200px;
+    /* border:1px solid red;  */
+}
+.progress_bar{
+   width: 100%;
+   height: max-content;
+   /* border:1px solid red;  */
+   margin-bottom: 5px;
+}
+.progress-icon{
+    color:var(--text-color);
+    font-size: 2rem;
+    margin-bottom:5px;
+}
+.info{
+    color:var(--text-color);
+}
+.bar_line{
+    width: 100%;
+    height: 18px;
+    background-color: var(--text-color);
+}
+/* parsent progress */
+.bar_line .progress-persent-html{
+    width: 98%;
+    height: 18px;
+    background-color: var(--progress-bar-color);
+    color:var(--text-color)
+}
+.bar_line .progress-persent-css{
+    width: 95%;
+    height: 18px;
+    background-color: var(--progress-bar-color);
+    color:var(--text-color)
+}
+.bar_line .progress-persent-js{
+    width: 30%;
+    height: 18px;
+    background-color: var(--progress-bar-color);
+    color:var(--text-color)
+}
+/* end skill contaienr */
