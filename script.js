@@ -6,3 +6,5 @@ toggle_btn.addEventListener("click",()=>{
     nav_continer.classList.toggle("open_nav");
     toggle_icon.classList.toggle("fa-xmark");
 });
+
+// send email 

@@ -247,7 +247,7 @@
     <div class="contact_container">
         <div class="left-content">
             <div class="input-container">
-                <form class="myform" name="myForm">
+                <form onsubmit="sendemail(); reset(); return false" class="myform" name="myForm">
                     <div class="input-fuld-container">
                         <label for="name">Name</label><br>
                         <input type="text" class="name" id="name" placeholder="Enter your name">
@@ -265,7 +265,7 @@
                         <textarea name="comment" id="comment" class="comment" placeholder="Enter your comment"></textarea>
                     </div>
                     <div class="input-fuld-container">
-                        <button type="button" class="submit-btn">Submit</button>
+                        <button type="submit" class="submit-btn">Submit</button>
                     </div>
                     
                 </form>
@@ -293,6 +293,24 @@
 
 
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+         function sendemail(){
+        Email.send({
+            SecureToken: "185beda0-d645-48fa-95a9-5eb1def71580",
+            To : 'mdnazmulhasan22323@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "New email from my website",
+            Body : "Name"+ document.getElementById("name").value
+                    +"<br> Email" + document.getElementById("email").value
+                    +"<br> Subject" + document.getElementById("subject").value
+                    +"<br> Comment" + document.getElementById("comment").value
+                    
+        }).then(
+          message => alert("Massage send successfuly")
+        );
+    }
+    </script>
     <script src="./script.js"></script>
 </body>
 </html>
