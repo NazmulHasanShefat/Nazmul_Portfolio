@@ -249,27 +249,27 @@
     <div class="contact_container">
         <div data-aos="fade-right" class="left-content">
             <div class="input-container">
-                <form onsubmit ="sendemail(); reset(); return false" class="myform" name="myForm">
+                <form action="https://api.web3forms.com/submit" method="post" class="myform" name="myForm">
+                    <input type="hidden" name="access_key" value="7f2f7758-9d88-4427-bcaf-5763f5a45ede">
                     <div class="input-fuld-container">
                         <label for="name">Name</label><br>
                         <input type="text" class="name" id="name" name="name" placeholder="Enter your name" required>
                     </div>
                     <div class="input-fuld-container">
                         <label for="email">Email</label><br>
-                        <input type="email" class="email" id="email" placeholder="Enter your Email" required>
+                        <input type="email" class="name" id="name" name="email" placeholder="Enter your Email" required>
                     </div>
                     <div class="input-fuld-container">
-                        <label for="name">Subject</label><br>
-                        <input type="text" class="subject" id="subject" placeholder="Enter your subject" required>
+                        <label for="subject">Subject</label><br>
+                        <input type="text" class="name" id="name" name="sub" placeholder="Enter your Subject" required>
                     </div>
                     <div class="input-fuld-container">
                         <label for="comment">Comment</label><br>
                         <textarea name="comment" id="comment" class="comment" placeholder="Enter your comment" required></textarea>
                     </div>
-                    <div class="input-fuld-container">
+                    <!-- <div class="input-fuld-container"> -->
                         <button type="submit" class="submit-btn">Submit</button>
-                    </div>
-                    
+                    <!-- </div> -->
                 </form>
             </div>
         </div><!--END left side-->
