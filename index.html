@@ -43,7 +43,7 @@
             <div class="left-contant">
                 <div class="hello-word heading-font"><h2>Hello, it's me</h2></div>
                 <div class="hello-name heading-font"><h1>Nazmul Hasan</h1></div>
-                <div class="hello-profation heading-font"><h1>And I'am a <span class="frontend-sentence">Frontend developer</span></h1></div>
+                <div class="hello-profation heading-font"><h1>And I'am a <span class="frontend-sentence" id="element"></span></h1></div>
                 <div class="About-ditail">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, facere. Fuga, sint ipsum sed sapiente ex recusandae nobis, voluptatibus vero sunt quae eum eveniet quos nostrum voluptatum iure doloremque facilis.</p>
                 </div>
@@ -332,13 +332,22 @@
 
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- type Js cdn  -->
     <script src="./script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
-        ofset:400,
-        duration: 1300,
+        ofset:200,
+        duration: 1000,
       });
+
+     //add type animation 
+      var typed = new Typed('#element', {
+      strings: ['<i>Web developer</i>', '&amp; Web designer.'],
+      typeSpeed: 80,
+      loop:true,
+    });
     </script>
 </body>
 </html>
