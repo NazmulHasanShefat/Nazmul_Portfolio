@@ -915,3 +915,13 @@ footer{
     text-align: center;
    }
 }
+@media screen and (max-width:450px) {
+    .wrap-foot-right {
+        width: 80%;
+        height: 80%;
+        flex-direction:column;
+    }
+    .sarvises-foot {
+        padding-top:20px;
+    }
+}
