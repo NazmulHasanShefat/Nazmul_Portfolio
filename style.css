@@ -10,6 +10,7 @@
     --primaryFont: "Noto Sans Indic Siyaq Numbers", sans-serif;
     --heading_font:"Average Sans", sans-serif;
     --nav-color:rgb(0, 89, 255);
+    --loader-color:rgb(255, 255, 255);
     --card_background:rgba(255, 255, 255, 0.075);
     --progress-bar-color:rgb(0, 89, 255);
     --headingFont2:"Playfair Display", serif;
@@ -935,7 +936,25 @@ footer{
     justify-content: center;
     align-items: center;
 }
-.loaderimage img{
+.preloader svg{
     width: 150px;
     height: 150px;
+    border-radius: 50%;
+}
+.preloader p{
+    color: #fff;
+    position: absolute;
+}
+circle{
+    fill: transparent;
+    stroke: var(--primary-color);
+    stroke-width:20px;
+    stroke-dasharray:0;
+    /* stroke-dashoffset: 0; */
+    animation: loderAnmi 2s linear infinite;
+}
+@keyframes loderAnmi {
+    100%{
+       stroke-dasharray: 316;
+    }
 }
