@@ -29,3 +29,10 @@ function sendemail(){
       message => alert("Massage send successfuly")
     );
 };
+
+// image loader
+let preloader = document.querySelector(".preloader");
+
+window.addEventListener("load",()=>{
+    preloader.style.display = "none";
+})
