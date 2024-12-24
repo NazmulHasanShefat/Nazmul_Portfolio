@@ -157,6 +157,9 @@ body{
 .left-contant{
     width: 80%;
     height: 400px;
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
 }
 .hello-word{
     width: 100%;
